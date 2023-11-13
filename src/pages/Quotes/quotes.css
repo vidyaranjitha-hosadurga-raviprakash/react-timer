@@ -1,0 +1,25 @@
+.quotes-wrapper {
+  padding: 1rem 2rem;
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-light);
+  margin-bottom: 5rem;
+}
+
+.quotes-text {
+  font-size: 1rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  padding: 0.1rem 0rem;
+  color: var(--primary-text-color);
+}
+
+.quotes-author {
+  font-size: 0rem;
+}
+
+.quotes-wrapper:hover > .quotes-author {
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-boldest);
+  transition: font-size 0.3s linear;
+  color: #ffece4;
+}

@@ -1,0 +1,52 @@
+.timer__container {
+  background-color: var(--primary-color-opacity);
+  gap: 35px;
+  padding: 50px 50px;
+  border-radius: 50px 50px;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.timer-remaining-time {
+  color: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.config-timer-form input {
+  width: 50%;
+}
+
+.config-timer-form button {
+  color: var(--contrast-secondary-color);
+}
+
+.config-timer-form button {
+  background-color: var(--primary-color-opacity);
+}
+
+.timer-display-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer-control-btn {
+  border-radius: 80%;
+  padding: 0.6rem 0.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+/* Small devices */
+@media (max-width: 767.98px) {
+  .timer__container {
+    width: 80%;
+  }
+}
