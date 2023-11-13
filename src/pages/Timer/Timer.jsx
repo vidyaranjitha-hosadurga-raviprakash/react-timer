@@ -61,7 +61,9 @@ export const Timer = () => {
         <div className="flex-centered-column">
           <span className="timer-remaining-time">{`${hours}: ${minutes}: ${seconds}`}</span>
         </div>
-        <div className="danger flex-centered-column">{"Times Up!"}</div>
+        <div className="danger flex-centered-column">
+          {remainingTime === 0 && "Times Up!"}
+        </div>
       </div>
     );
   };
