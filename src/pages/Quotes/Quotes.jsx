@@ -13,7 +13,7 @@ export const Quotes = () => {
       <div className="quotes-text">"{text}"</div>
 
       <div className="quotes-author">
-        By {`${author?.length ? author : "Unknown"}`}
+        By {`${author?.length ? author.split(",")[0] : "Unknown"}`}
       </div>
     </div>
   );

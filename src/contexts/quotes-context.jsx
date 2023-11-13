@@ -16,11 +16,10 @@ const QuotesProvider = ({ children }) => {
 
   const fetchQuotes = async () => {
     const random = generateRandomNumber();
-    console.log(" random 1 = ", random);
+
     await axios
       .get(apiUrls.QUOTES)
       .then(({ data }) => {
-        console.log(" data =", data);
         const { text, author } = data[random];
         setQuotes({ text, author }); // ES6 notation
       })
